@@ -1,7 +1,9 @@
+# -- coding:UTF-8 --
 import pos
 import os
-LTP_DATA_DIR = '/Users/peng_ji/codeHub/jupyter/KG-web/ltp_data_v3.4.0'  # ltp模型目录的路径
-par_model_path = os.path.join(LTP_DATA_DIR, 'parser.model')  # 依存句法分析模型路径，模型名称为`parser.model`
+import config as cfg
+#LTP_DATA_DIR = '/Users/peng_ji/codeHub/jupyter/KG-web/ltp_data_v3.4.0'  # ltp模型目录的路径
+par_model_path = os.path.join(cfg.LTP_DATA_DIR, 'parser.model')  # 依存句法分析模型路径，模型名称为`parser.model`
 
 from pyltp import Parser
 parser = Parser() # 初始化实例

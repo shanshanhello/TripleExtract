@@ -1,3 +1,4 @@
+# -- coding:UTF-8 --
 import os
 import config as cfg
 from pyltp import Postagger
